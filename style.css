@@ -1,0 +1,11 @@
+@media (max-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 375px;
+  }
+}
