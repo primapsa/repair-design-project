@@ -16,13 +16,23 @@
 
 .header {
     display: flex;
-    height: 83px;    
+    height: 83px; 
+    background-color: #131313;  
+}
+
+.home {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    justify-content: space-between;
+    height: 37px;
+    width: 100%;
     padding: 0 100px 0 82px;
-    background-color: #131313;
-    & > * {
-        outline: 1px solid yellow;
-    }
-    .header__logo{
+    
+    // & > * {
+    //     outline: 1px solid yellow;
+    // }
+    .home__logo{
         display: block;
         font-family: "FuturaDemiC";
         font-size: 14px;
@@ -31,24 +41,23 @@
         color: #E3B873;
     }
 
-    .header__menu {
+    .home__menu {
         width: 581px; 
-        margin-right: 95px;    
-        margin-left: 67px;   
+          
 
         .menu {
             display: flex;   
             justify-content: space-between;
-            align-items: center;        
+            align-items: center;                          
+            
         }
 
         .menu__items {
             list-style: none;
-            outline: 1px solid green;
+            
         }  
 
         .menu__links {
-
             font-family: "FuturaBookC";
             font-size: 14px;
             line-height: 16px;
@@ -59,7 +68,7 @@
         
     }
 
-    .header__phone {
+    .home__phone {
         display: block;
         text-decoration: none;
         font-family: "FuturaDemiC";
@@ -69,7 +78,8 @@
         color: #E3B873;
     }
 
-    .header__call {
+    .home__call {
+        display: block;
         height: 37px;
         width: 161px;
         background: #E3B873;
@@ -83,4 +93,118 @@
         text-transform: uppercase;
         color: #FFFFFF;
     }
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    .banner__social {
+        width: 90px;
+        background-color: #131313;
+        .social-link {            
+            display: block;
+            margin: 200px auto;
+            width: 20px;
+            height: 174px;           
+            text-decoration: none;
+            background-image: url("assets/img/instagrm-line.png");
+            background-repeat: no-repeat;
+        }
+
+    }
+    .banner__banner {
+        position: relative;
+        height: 513px;
+        width: 100%;
+        padding-left: 60px;
+        padding-top: 194px;
+        background-image: url("assets/img/banner-repair.png");
+        background-repeat: no-repeat;
+
+        .banner-title {
+            display: block;
+            max-width: 520px;
+            font-family: "Yeseva One";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 53px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            &--colored {
+                color: #E3B873;
+            }
+        }
+
+        .banner-promo {  
+            display: block;          
+            max-width: 490px;
+            margin: 30px 0 45px 0;
+            font-family: "FuturaBookC";
+            font-size: 22px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+        .btn {
+            width: 207px;
+            height: 51px;
+            font-family: "FuturaDemiC";
+            font-size: 13px;
+            line-height: 15px;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;  
+        }
+        .banner-calculate {  
+            margin-right: 20px;        
+            border: 0;
+            background: #E3B873;
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+            border-radius: 2px;
+        
+        }
+        .banner-submit {
+            background: 0;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+
+        .banner-scroll {
+            position: relative;
+            display: block;
+            bottom: -141px;
+            left: -141px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 247px;
+            height: 97px;
+            background-color: #131313;
+
+            .scroll-txt {
+               
+                min-height: 29px;
+                min-width: 150px;                
+                font-family: "Yeseva One";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 29px;
+                background-image: url("assets/img/scrol-down-marker.png");
+                background-position: 120px 0;
+                background-repeat: no-repeat;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.projects {
+    height: 1074px;
+    background-image: url("assets/img/project-bg.png");
+    background-repeat: no-repeat;    
+    background-position: 0 -2px;
 }
