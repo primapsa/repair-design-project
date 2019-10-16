@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
     <title>Document</title>
 </head>
 <body>
@@ -45,15 +46,60 @@
             </div>            
           </section>
           <section class="projects">
-            <div class="projects__completed-projects"></div>
-            <div class="projects__slider"></div>
-            <div class="projects__video"></div>
-            <div class="promotion"></div>
+            <div class="projects__completed-projects">
+              <div class="projects-header">
+                  <span class="project-title header-span">Completed projects</span>
+                  <span class="project-text header-span">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</span>
+              </div>
+              <div class="projects-desc">
+                  <span class="desc-city desc-span">City:
+                    <span class = "city desc-span-text">Rostov-on-Don LCD admiral</span>
+                  </span>
+                  <span class="desc-area desc-span">apartment area:
+                      <span class = "area desc-span-text">81 m2</span>
+                  </span>
+                  <span class="desc-time desc-span">Repair time:
+                      <span class = "time desc-span-text">3.5 months</span>
+                  </span>
+                  <span class="desc-cost desc-span">Repair Cost:
+                      <span class = "cost desc-span-text">Upon request</span>
+                  </span>
+              </div>
+              <div class="projects-switcher">
+                <span class="switcher-left switcher"></span>
+                <span class="switcher-marker switcher-marker--colored switcher"></span>
+                <span class="switcher-marker switcher"></span>
+                <span class="switcher-marker switcher"></span>
+                <span class="switcher-right switcher"></span>
+              </div>              
+            </div>
+            <div class="projects__slider">
+              <nav class="slider-map">
+                <a href="#" class="map-name map-name--colored ">Rostov-on-Don, Admiral</a>
+                <a href="#" class="map-name">Sochi Thieves</a>
+                <a href="#" class="map-name">Rostov-on-Don Patriotic</a>
+              </nav>
+              <div class="slider-frames">
+                <img class="frame-content" src="assets/img/slide-1.png">
+                <img class="frame-content" src="assets/img/slide-2.png">                       
+              </div>
+            </div>            
           </section>
           <section class="repair">
+            <div class="repair__online-control">
+              <span class="online-sign">online control</span>
+              <iframe class="online-video" width="817" height="434" src="https://www.youtube.com/embed/Btkt0F7O-O8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p class="online-paragraph">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
+              <form action="#" class="online-form">
+                <label class="label-name form-label">Name<input class="input-name form-input" type="text" placeholder="What is your name:" required></label>                
+                <label class="label-name form-labe" >Phone<input class="input-phone form-input" type="tel" placeholder="Your phone number:" required></label>
+                <input class="input-submit" type="submit" value="submit">               
+                <label class="checkbox-text form-labe"><input  class="checkbox-marker form-input" type="checkbox" required>I agree to the processing of personal data</span>
+              </form>
+            </div>
+            <div class="repair__types"></div>
             <div class="repair__promotion"></div>
-            <div class="repair__promotion"></div>
-            <div class="repair__promotion"></div>
+            
           </section>
           <section class="measurement">
             <div class="measurement__graph"></div>
