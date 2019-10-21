@@ -703,4 +703,240 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
+.repair .repair__promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  bottom: 115px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.repair .repair__promotion .promotion-elipse {
+  position: relative;
+  height: 636px;
+  min-width: 776px;
+  background-image: url("assets/img/elipse-building.png");
+  background-repeat: no-repeat;
+}
+
+.repair .repair__promotion .promotion-elipse .promotion-point {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.repair .repair__promotion .promotion-elipse .promotion-point .promotion-num {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin-right: 13px;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 30px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.repair .repair__promotion .promotion-elipse .promotion-point .promotion-num-text {
+  display: block;
+  width: 225px;
+  font-family: "FuturaMediumC";
+  font-size: 18px;
+  word-wrap: break-word;
+  color: #363636;
+}
+
+.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(1) {
+  top: 120px;
+  left: 355px;
+}
+
+.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(1) .promotion-num-text {
+  width: 422px;
+}
+
+.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(2) {
+  top: 186px;
+  left: 432px;
+}
+
+.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(3) {
+  top: 306px;
+  left: 455px;
+}
+
+.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(4) {
+  top: 425px;
+  left: 386px;
+}
+
+.repair .repair__promotion .promotion-from .submit-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 28px 49px;
+  width: 509px;
+  height: 506px;
+  background: #131313;
+  -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.repair .repair__promotion .promotion-from .submit-span {
+  display: block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 39px;
+  width: 290px;
+  font-family: "FuturaDemiC";
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  word-wrap: break-word;
+  color: #FFFFFF;
+}
+
+.repair .repair__promotion .promotion-from .form-label,
+.repair .repair__promotion .promotion-from .form-input {
+  display: block;
+}
+
+.repair .repair__promotion .promotion-from .form-label,
+.repair .repair__promotion .promotion-from .form-input {
+  width: 408px;
+}
+
+.repair .repair__promotion .promotion-from .form-input {
+  height: 26px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.repair .repair__promotion .promotion-from .form-input::-webkit-input-placeholder {
+  vertical-align: top;
+  font-family: "FuturaMediumC";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.repair .repair__promotion .promotion-from .form-input:-ms-input-placeholder {
+  vertical-align: top;
+  font-family: "FuturaMediumC";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.repair .repair__promotion .promotion-from .form-input::-ms-input-placeholder {
+  vertical-align: top;
+  font-family: "FuturaMediumC";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.repair .repair__promotion .promotion-from .form-input::placeholder {
+  vertical-align: top;
+  font-family: "FuturaMediumC";
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.repair .repair__promotion .promotion-from .checkbox-from {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 18px;
+  width: 18px;
+  margin-right: 9px;
+}
+
+.repair .repair__promotion .promotion-from .form-label {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.repair .repair__promotion .promotion-from .form-label:nth-of-type(2) {
+  margin: 48px 0;
+}
+
+.repair .repair__promotion .promotion-from .input-submit {
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 213px;
+  height: 51px;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border: 0;
+  border-radius: 2px;
+  font-family: "FuturaDemiC";
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.repair .repair__promotion .promotion-from .checkbox-text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 18px;
+  width: 286px;
+  margin: 18px 0 39px 0;
+  font-family: "FuturaBookC";
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.repair .promotion-discount {
+  display: block;
+  height: 72px;
+  width: 370px;
+  margin-top: 38px;
+  padding: 10px 0 0 115px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-position-y: -10px;
+  word-wrap: break-word;
+  font-family: "FuturaDemiC";
+  font-size: 20px;
+  line-height: 25px;
+  background-image: url("assets/img/pigbox.png");
+  background-repeat: no-repeat;
+  color: #E3B873;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
 /*# sourceMappingURL=style.css.map */
