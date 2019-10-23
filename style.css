@@ -436,7 +436,7 @@
 }
 
 .repair {
-  height: 1440px;
+  height: 2663px;
   position: relative;
   background-image: url("assets/img/lines-bg.png");
   background-repeat: no-repeat;
@@ -710,6 +710,10 @@
   display: flex;
   position: relative;
   bottom: 115px;
+  height: 725px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -719,6 +723,7 @@
   position: relative;
   height: 636px;
   min-width: 776px;
+  margin-bottom: 34px;
   background-image: url("assets/img/elipse-building.png");
   background-repeat: no-repeat;
 }
@@ -764,7 +769,7 @@
 }
 
 .repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(1) {
-  top: 120px;
+  top: 66px;
   left: 355px;
 }
 
@@ -773,17 +778,17 @@
 }
 
 .repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(2) {
-  top: 186px;
+  top: 133px;
   left: 432px;
 }
 
 .repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(3) {
-  top: 306px;
+  top: 252px;
   left: 455px;
 }
 
 .repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(4) {
-  top: 425px;
+  top: 370px;
   left: 386px;
 }
 
@@ -922,21 +927,132 @@
 }
 
 .repair .promotion-discount {
+  position: relative;
   display: block;
   height: 72px;
-  width: 370px;
+  width: 350px;
   margin-top: 38px;
-  padding: 10px 0 0 115px;
+  padding: 13px 0 13px 97px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-position-y: -10px;
   word-wrap: break-word;
   font-family: "FuturaDemiC";
   font-size: 20px;
   line-height: 25px;
+  color: #E3B873;
+}
+
+.repair .promotion-discount::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  background: #E3B873;
   background-image: url("assets/img/pigbox.png");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+          box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+}
+
+.pattern {
+  height: 864px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("assets/img/pattern-bg.png");
+}
+
+.pattern .pattern-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 134px 0 0 99px;
+}
+
+.pattern .pattern-list .pattern-list__text {
+  display: block;
+  height: 66px;
+  width: 283px;
+  margin-bottom: 47px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
   color: #E3B873;
-  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.pattern .pattern-list .pattern-list__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 516px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.pattern .pattern-list .pattern-list__items .list-link {
+  text-decoration: none;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  line-height: 34px;
+  color: #FFFFFF;
+}
+
+.pattern .pattern-gallery {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-right: 102px;
+}
+
+.pattern .pattern-gallery .pattern-gallery__line {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pattern .pattern-gallery .pattern-gallery__line:nth-of-type(1) {
+  top: -43px;
+  bottom: -41px;
+  margin-right: 43px;
+}
+
+.pattern .pattern-gallery .pattern-gallery__line:nth-of-type(2) {
+  top: -112px;
+  bottom: 40px;
+}
+
+.pattern .pattern-gallery .gallery-img:last-child {
+  margin-top: 37px;
 }
 /*# sourceMappingURL=style.css.map */

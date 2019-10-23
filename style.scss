@@ -423,11 +423,11 @@
 }
 
 .repair {
-    height: 1440px;
+    height: 2663px;
     position: relative;
     background-image: url("assets/img/lines-bg.png");
     background-repeat: no-repeat;
-
+   
     .repair__online-control {
         position: relative;
         top: -285px;
@@ -628,12 +628,15 @@
         display: flex;
         position: relative;
         bottom: 115px;
+        height: 725px;
+        align-items: flex-end;
         justify-content: space-between;
 
         .promotion-elipse {
             position: relative;
             height: 636px;
             min-width: 776px;
+            margin-bottom: 34px;
             background-image: url("assets/img/elipse-building.png");
             background-repeat: no-repeat;
 
@@ -673,7 +676,7 @@
                 }
 
                 &:nth-of-type(1){
-                    top: 120px;
+                    top: 66px;
                     left: 355px;
 
                     .promotion-num-text{                        
@@ -681,15 +684,15 @@
                     }
                 }
                 &:nth-of-type(2){
-                    top: 186px;
+                    top: 133px;
                     left: 432px;                   
                 }
                 &:nth-of-type(3){
-                    top: 306px;
+                    top: 252px;
                     left: 455px;                   
                 }
                 &:nth-of-type(4){
-                    top: 425px;
+                    top: 370px;
                     left: 386px;                   
                 }
             }
@@ -793,30 +796,113 @@
                 font-family: "FuturaBookC";
                 font-size: 16px;
                 line-height: 22px;
-                color: #FFFFFF;               
-    
+                color: #FFFFFF;     
             } 
-
         }
-
-
     }
     .promotion-discount {
+        position: relative;
         display: block;
         height: 72px;
-        width: 370px;
+        width: 350px;
         margin-top: 38px;
-        padding: 10px 0 0 115px;
-        box-sizing: border-box;       
-        background-position-y: -10px;
+        padding: 13px 0 13px 97px;
+        box-sizing: border-box;        
         word-wrap: break-word;
         font-family: "FuturaDemiC";
         font-size: 20px;
-        line-height: 25px;
-        background-image: url("assets/img/pigbox.png");
-        background-repeat: no-repeat;
-        color: #E3B873;
-        text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+        line-height: 25px;       
+        color: #E3B873;       
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 72px;
+            width: 72px;
+            border-radius: 50%;
+            background: #E3B873;
+            background-image: url("assets/img/pigbox.png");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+
+        }
 
     }
-}   
+} 
+.pattern {
+    height: 864px;
+    display: flex;
+    justify-content: space-between;
+   
+   
+    background-image: url("assets/img/pattern-bg.png");
+    .pattern-list{
+        // max-height: 587px;
+        display: flex;        
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 134px 0 0 99px;
+
+        .pattern-list__text {
+            display: block;
+            height: 66px;
+            width: 283px;
+            margin-bottom: 47px;
+            font-family: "Yeseva One";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 27px;
+            line-height: 37px;
+            text-transform: uppercase;
+            color: #E3B873;
+        }
+
+        .pattern-list__items {
+            display: flex;            
+            height: 516px;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style: none;
+            
+            .list-link {
+                text-decoration: none;
+                font-family: "Proxima Nova";
+                font-size: 20px;
+                line-height: 34px;
+                color: #FFFFFF;
+            }
+
+        }
+
+    }
+    .pattern-gallery {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        position: relative;  
+        padding-right: 102px;    
+
+        .pattern-gallery__line {
+            position: relative;
+            display: flex;
+            z-index: 10;
+            flex-direction: column;            
+        }
+        .pattern-gallery__line:nth-of-type(1){
+            top: -43px;
+            bottom: -41px;
+            margin-right: 43px;          
+          }
+        .pattern-gallery__line:nth-of-type(2){
+            top: -112px;   
+            bottom: 40px;   
+        }
+        .gallery-img:last-child {
+            margin-top: 37px;
+        }
+    }
+}
+
