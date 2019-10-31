@@ -933,4 +933,146 @@
         color: #363636;
     }
 }
+ /* ---SECTION GOAL--- */
+.goal {
+    height: 1616px;
+    display: flex;
+    padding-top: 500px;
+    box-sizing: border-box;
+    background-image: url("assets/img/goal-bg.png");
+}
 
+.goal-info {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        display: block;
+    }
+}
+
+.goal-info__header {
+    font-family: "FuturaDemiC";
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.goal-info__title {
+    max-width: 190px;
+    margin: 18px 0 92px 0;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    word-break: break;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.goal-info__slider-counter {
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.goal-info__subtitle {
+    max-width: 212px; 
+    margin: 22px 0 16px 0;   
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    word-break: break;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.goal-info__text {
+    max-width: 342px;
+    text-align: left;
+    font-family: "FuturaBookC";
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.slider-switcher {
+    display: flex;
+    margin-top: 107px;
+    span {
+        display: block;
+    }
+    //margin-top: 90px;
+}   
+
+.slider-switcher__switcher-prev,
+.slider-switcher__switcher-next {
+    width: 42px;
+    height: 13px;
+}
+    
+.slider-switcher__switcher-prev {
+    margin-right: 20px;
+    background-image: url("assets/img/switcher-left.png");
+}
+
+.slider-switcher__switcher-next {
+    margin-left: 20px;
+    background-image: url("assets/img/switcher-rigth.png");
+}
+    
+.slider-switcher__point {
+        width: 9px;
+        height: 9px;
+        margin: 0 9px;
+        background: rgba(255, 255, 255, 0.3);
+      
+        border-radius: 100%;
+
+        &_active {
+            background: #FFFFFF;
+        }
+}
+
+.goal-steps {
+    display: flex;
+    flex-direction: column;
+}
+
+.goal-steps__grid {
+    max-width: 765px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 127px 136px 100px;
+    row-gap: 36px;
+    column-gap: 200px;
+
+    
+}
+.steps__number,
+.steps__target {
+        display: block; 
+        opacity: 0.3;      
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 21px;
+       
+        color: #FFFFFF;
+}
+.steps__number {
+    font-family: "Yeseva One";    
+}
+
+.steps__target {
+    font-family: "FuturaBookC";
+    line-height: 18px
+}
+ /* ---SECTION GOAL--- */
