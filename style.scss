@@ -936,7 +936,10 @@
  /* ---SECTION GOAL--- */
 .goal {
     height: 1616px;
+    position: relative;
+    bottom: 60px;
     display: flex;
+    justify-content: space-between;
     padding-top: 500px;
     box-sizing: border-box;
     background-image: url("assets/img/goal-bg.png");
@@ -945,6 +948,7 @@
 .goal-info {
     display: flex;
     flex-direction: column;
+    margin-left: 100px;
 
     span {
         display: block;
@@ -1044,6 +1048,7 @@
 .goal-steps {
     display: flex;
     flex-direction: column;
+    margin-right: 102px;
 }
 
 .goal-steps__grid {
@@ -1053,6 +1058,7 @@
     grid-template-columns: 127px 136px 100px;
     row-gap: 36px;
     column-gap: 200px;
+    margin-top: 87px;
 
     
 }
@@ -1068,11 +1074,12 @@
         color: #FFFFFF;
 }
 .steps__number {
-    font-family: "Yeseva One";    
+    font-family: "Yeseva One"; 
+    .steps__target {
+        font-family: "FuturaBookC";
+        line-height: 18px
+    }   
 }
 
-.steps__target {
-    font-family: "FuturaBookC";
-    line-height: 18px
-}
+
  /* ---SECTION GOAL--- */
