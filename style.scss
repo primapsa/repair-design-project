@@ -1080,10 +1080,10 @@
         line-height: 18px
     }   
 }
- /* ---SECTION GOAL--- */
- /* ---SECTION TAEAM-REVIEW--- */
+ /* --- END GOAL--- */
+ /* ---SECTION TAEAM--- */
  .team-review {
-    height: 900px;
+    height: 1500px;
     position: relative;
  }
  .team {
@@ -1203,4 +1203,142 @@
     line-height: 34px;
     text-align: center;
     color: #363636;
+ }
+ /* --- END TEAM --- */
+
+ /* --- REVIEW --- */
+ .review {
+     margin-top: -300px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .review-sign {
+    @include title-with-icon;
+    background-image: url("assets/img/our-clients.png");           
+    color: #181818;  
+ }
+ .review-container {
+     display: flex;
+     justify-content: center;
+ }
+ .review-text {
+    display: block;
+    width: 460px;
+    margin: 23px 0 39px 0;
+    font-family: "FuturaBookC";
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;    
+    color: #363636;
+ }
+
+ .review-block {
+     display: flex;
+     position: relative;
+     margin: 0 27px;
+     width: 376px;
+     padding: 24px 32px 0 20px;
+     box-sizing: border-box;
+     flex-direction: column;
+     background: #FFFFFF;
+     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+
+     &:nth-of-type(1) .review-block__photo {        
+        background-image: url("assets/img/review_1_photo.png");         
+     }
+     &:nth-of-type(2) .review-block__photo {        
+        background-image: url("assets/img/review_2_photo.png");         
+     }
+     &:nth-of-type(3) .review-block__photo {        
+        background-image: url("assets/img/review_3_photo.png");         
+     }
+ }
+.review-block__owner{
+    display: flex;
+    align-items: center;
+
+
+}
+ .review-block__photo {
+     height: 76px;
+     width: 76px;
+     margin-right: 23px;
+     border-radius: 50%;
+    
+     
+ }
+
+ .review-block__name {
+    display: block;
+    max-width: 180px;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    word-wrap: wrap;
+    line-height: 23px;    
+    color: #181818;
+ }
+ .review-block__text {
+    height: 325px;   
+    margin-top: 22px; 
+    font-family: "FuturaBookC";
+    font-size: 15px;
+    line-height: 180%;       
+    color: #959595;
+   
+    overflow: hidden;
+ }
+ .review-block__result {
+     position: absolute;
+     bottom: -25px;
+     width: 294px;
+     height: 54px;
+     display: flex;
+     align-content: center;   
+     box-sizing: border-box;
+     background: #E3B873;
+     box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+ }
+
+ .repare-result__square {
+    width: 137px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 11px 17px;
+    box-sizing: border-box;
+    background-image: url("assets/img/result-square.png");
+    background-repeat: no-repeat;
+    background-position: 17px 11px;
+    border-right: 1px solid #FFFFFF;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+ }
+
+ .repare-result__duration {
+    width: 157px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 11px 24px 11px 17px;;
+    background-image: url("assets/img/result-time.png");
+    background-repeat: no-repeat;
+    background-position: 17px 11px;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;    
+    color: #FFFFFF;
  }
