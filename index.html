@@ -379,7 +379,26 @@
             </div>           
           </section>
           <section class="contacts">
-            <div class="contacts__form"></div>
+            <div class="question-wrapper">  
+              <span class="question-text">have any questions?</span> 
+              <form action="#" class="question-form">         
+              <div class="question-form__container">
+                <label class="question-form__name input-label">Name
+                  <input class="input-label__name form-input" type="text" placeholder="What is your name:" required>
+                </label>       
+                <label class="question-form__phone input-label" >Phone
+                  <input class="input-label__phone form-input" type="tel" placeholder="Your phone number:" required>
+                </label>
+              </div>
+              <label class="question-form__question input-label" >Question
+                <input class="input-label__question form-input" type="text" placeholder="I want to know:" required>
+              </label>                                
+              <label class="question-form__agreement input-label">
+                <input  class="input-label__agreement form-input" type="checkbox" required>I agree to the processing of personal data
+              </label>
+              <input class="question-form__submit" type="submit" value="submit"> 
+             </form>  
+            </div>
             <div class="contacts__map"></div>
           </section>
           <footer class="footer">

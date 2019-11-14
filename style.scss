@@ -1085,6 +1085,8 @@
  .team-review {
     height: 1500px;
     position: relative;
+    background-image: url("assets/img/review-bg.png");
+    background-repeat: no-repeat;
  }
  .team {
      position: relative;
@@ -1342,3 +1344,200 @@
     text-transform: uppercase;    
     color: #FFFFFF;
  }
+
+  /* --- END REVIEW --- */
+  /* --- CONTACTS --- */
+  .contacts {
+      position: relative;
+      display: flex;
+      height: 954px;
+      justify-content: center;      
+      background-image: url("assets/img/contacts-bg.png");
+      background-repeat: no-repeat;      
+      
+  }
+  .question-wrapper {
+      position: absolute;
+      width: 883px;
+      height: 452px;
+      top: -224px; 
+      display: flex;
+      padding: 34px 0;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;  
+      box-sizing: border-box;   
+      
+      background-image: url("assets/img/form-lines.png");
+  }
+
+.question-text {
+    display: block;
+    font-family: "Yeseva One";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.question-form {
+    display: flex;    
+    width: 520px;
+    height: 304px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-label,
+.form-input {
+    display: block;
+}
+.input-label {
+    font-family: "FuturaBookC";
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.input-label__phone,
+.input-label__name,
+.input-label {
+    width: 231px;
+}
+
+.question-form__question, 
+.input-label__question {
+    width: 100%;
+}
+.question-form__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.input-label__name,
+.input-label__phone,
+.input-label__question {
+    height: 25px;    
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    //box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.15);
+
+    &::placeholder {
+        font-family: "FuturaBookC";
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    
+}
+.question-form__agreement {
+
+    display: flex;
+    height: 18px;
+    width: 286px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "FuturaBookC";
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}   
+.question-form__submit {
+    width: 200px;
+    height: 51px;
+    background: #E3B873;
+    border: 0;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+    font-family: "FuturaDemiC";
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+// .form-label,
+// .form-input {
+//     display: block;
+// }
+
+// .label-name,
+// .input-name,
+// .input-phone {
+    
+//     width: 231px;
+// }
+// question-form__container
+// .input-name,
+// .input-phone {
+//     height: 26px;
+//     background-color: transparent;
+//     border: 0;
+//     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+
+//     &::placeholder {
+//         vertical-align: top;
+//         font-family: "FuturaBookC";
+//         font-size: 18px;
+//         line-height: 36px;
+//         color: #363636;
+//     }
+    
+// }
+
+// .label-name{
+   
+//     font-family: "FuturaBookC";
+//     font-size: 15px;
+//     line-height: 20px;
+//     color: rgba(54, 54, 54, 0.5);
+// }
+
+// .input-submit {
+//     display: block;
+//     width: 200px;
+//     height: 51px;
+//     background: #E3B873;
+//     box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+//     border: 0;
+//     border-radius: 2px;
+//     font-family:"FuturaDemiC";
+//     font-size: 15px;
+//     line-height: 26px;            
+//     text-align: center;
+//     text-transform: uppercase;
+//     color: #FFFFFF;
+
+// }
+
+// .checkbox-text {
+//     display: block;
+//     justify-self: center;
+//     margin: 35px auto;
+//     width: 286px;
+//     font-family: "FuturaBookC";
+//     font-size: 16px;
+//     line-height: 22px;
+//     color: #181818;
+
+//     .checkbox-marker {
+//         display: inline-block;
+//         margin-right: 9px;
+//     }
+
+// } 
+
+// } 
+  /* --- END CONTACTS ---*/

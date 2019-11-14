@@ -1279,6 +1279,8 @@
 .team-review {
   height: 1500px;
   position: relative;
+  background-image: url("assets/img/review-bg.png");
+  background-repeat: no-repeat;
 }
 
 .team {
@@ -1641,4 +1643,188 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
+/* --- END REVIEW --- */
+/* --- CONTACTS --- */
+.contacts {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 954px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("assets/img/contacts-bg.png");
+  background-repeat: no-repeat;
+}
+
+.question-wrapper {
+  position: absolute;
+  width: 883px;
+  height: 452px;
+  top: -224px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 34px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("assets/img/form-lines.png");
+}
+
+.question-text {
+  display: block;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.question-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 520px;
+  height: 304px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-label,
+.form-input {
+  display: block;
+}
+
+.input-label {
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-label__phone,
+.input-label__name,
+.input-label {
+  width: 231px;
+}
+
+.question-form__question,
+.input-label__question {
+  width: 100%;
+}
+
+.question-form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input-label__name,
+.input-label__phone,
+.input-label__question {
+  height: 25px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.input-label__name::-webkit-input-placeholder,
+.input-label__phone::-webkit-input-placeholder,
+.input-label__question::-webkit-input-placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.input-label__name:-ms-input-placeholder,
+.input-label__phone:-ms-input-placeholder,
+.input-label__question:-ms-input-placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.input-label__name::-ms-input-placeholder,
+.input-label__phone::-ms-input-placeholder,
+.input-label__question::-ms-input-placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.input-label__name::placeholder,
+.input-label__phone::placeholder,
+.input-label__question::placeholder {
+  font-family: "FuturaBookC";
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.question-form__agreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 18px;
+  width: 286px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "FuturaBookC";
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.question-form__submit {
+  width: 200px;
+  height: 51px;
+  background: #E3B873;
+  border: 0;
+  -webkit-box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+          box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
+  font-family: "FuturaDemiC";
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* --- END CONTACTS ---*/
 /*# sourceMappingURL=style.css.map */
