@@ -1651,12 +1651,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 954px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url("assets/img/contacts-bg.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .question-wrapper {
@@ -1826,5 +1834,83 @@
   color: #FFFFFF;
 }
 
+.contact-us {
+  height: 107px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 245px 0 41px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us__text {
+  display: block;
+  max-width: 589px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  word-wrap: wrap;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.contact-us__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  margin: 0 8px;
+  border-radius: 50%;
+  background: #E3B873;
+}
+
+.contact-us__email {
+  background-image: url("assets/img/social-email.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.contact-us__instagram {
+  background-image: url("assets/img/social-instagram.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.map {
+  height: 465px;
+  width: 925px;
+  background-image: url("assets/img/google-map.png");
+  background-repeat: no-repeat;
+}
+
 /* --- END CONTACTS ---*/
+/* --- FOOTER ---*/
+.footer {
+  height: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #131313;
+}
+
+/* --- END FOOTER ---*/
 /*# sourceMappingURL=style.css.map */
