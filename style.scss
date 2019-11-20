@@ -54,9 +54,10 @@ $ProximaNova: "Proxima Nova";
   background-color: #131313;
 }
 
-.home {
-  @include flex-center-space;
+.home {  
   height: 37px;
+  display: flex;  
+  align-items: center;
   width: 100%;
   margin-top: 24px;
   padding: 0 100px 0 82px;
@@ -68,6 +69,7 @@ $ProximaNova: "Proxima Nova";
 
 .home__menu {
   width: 581px;
+  margin: 0 74px 0 102px;
 
   .menu {
     @include flex-center-space;
@@ -85,6 +87,7 @@ $ProximaNova: "Proxima Nova";
 
 .home__phone {
   display: block;
+  margin-right: 45px;
   @include text-styling($FuturaDemiC, 14px, 16px, none, #e3b873);
   text-decoration: none;
   text-decoration-line: underline;
@@ -132,21 +135,22 @@ $ProximaNova: "Proxima Nova";
   background-repeat: no-repeat;
   background-size: cover;
 }
-.banner-title {
-  display: block;
+.banner-header {
   max-width: 520px;
+}
+.banner-title {  
   @include text-styling($YesevaOne, 40px, 53px, uppercase);
   @include text-normal;
 
-  &_colored {
+  &_colored {      
     color: #e3b873;
   }
 }
 
 .banner-promo {
   display: block;
-  max-width: 490px;
-  margin: 30px 0 45px 0;
+  max-width: 470px;
+  margin: 14px 0 45px 0;
   @include text-styling($FuturaBookC, 22px, 30px, none);
 }
 .btn {
@@ -174,7 +178,7 @@ $ProximaNova: "Proxima Nova";
   width: 247px;
   height: 97px;
   display: block;
-  bottom: -141px;
+  bottom: -160px;
   left: -134px;
   display: flex;
   align-items: center;
@@ -197,19 +201,22 @@ $ProximaNova: "Proxima Nova";
 /* --- PROJECTS --- */
 .projects {
   display: flex;
-  align-items: flex-end;
-  height: 695px;
-  padding: 0 0 379px 100px;
+  //align-items: flex-end;
+  height: 1078px;
+  padding: 108px 0 0 100px;
+  box-sizing: border-box;
   background-image: url("assets/img/project-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
 .projects__completed-projects {
-  max-height: 482px;
+  max-height: 482px;  
   width: 660px;
   display: flex;
   flex-direction: column;
+  padding-top: 68px;  
+  box-sizing: border-box;
 }
 .projects-header {
   display: flex;
@@ -230,15 +237,17 @@ $ProximaNova: "Proxima Nova";
 }
 
 .project-text {
+  margin-top: 21px;
   @include text-styling($FuturaBookC, 18px, 29px, none);
 }
 
 .projects-desc {
+  max-width: 383px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  row-gap: 30px;
-  margin-top: 50px;
+  row-gap: 37px;
+  margin-top: 57px;
 }
 
 .desc-span {
@@ -250,6 +259,7 @@ $ProximaNova: "Proxima Nova";
   &-text {
     display: block;
     max-width: 120px;
+    margin-top: 5px;
     overflow: hidden;
     @include text-styling($FuturaBookC, 15px, 20px, none);
   }
@@ -257,7 +267,7 @@ $ProximaNova: "Proxima Nova";
 
 .projects-switcher {
   display: flex;
-  margin-top: 90px;
+  margin-top: 68px;
 
   .switcher {
     display: block;
@@ -295,13 +305,13 @@ $ProximaNova: "Proxima Nova";
 .projects__slider {
   max-height: 551px;
   width: 100%;
-  margin-left: 70px;
+  margin-left: 75px;
 }
 .slider-map {
   display: flex;
   justify-content: space-between;
   width: 623px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 .map-name {
   display: block;
@@ -340,8 +350,8 @@ $ProximaNova: "Proxima Nova";
   &:after {
     content: "";
     position: absolute;
-    top: calc(50% - 23px);
-    right: 5%;
+    top: calc(47% - 23px);
+    right: 8%;
     width: 55px;
     height: 55px;
     background-color: #e3b873;
@@ -368,11 +378,9 @@ $ProximaNova: "Proxima Nova";
     .item-list {
       position: relative;
       z-index: 1;
-      bottom: 150px;
-      left: 31px;
-      width: 330px;
-      //height: 286px;
-      //margin: 0 auto;
+      bottom: 129px;
+      left: 46px;
+      width: 330px;     
       box-sizing: border-box;
       padding: 25px 0 0 34px;
       background: #ffffff;
@@ -380,7 +388,7 @@ $ProximaNova: "Proxima Nova";
 
       .list-title {
         display: block;
-        margin-bottom: 13px;
+        margin-bottom: 3px;
         @include text-styling($YesevaOne, 18px, 25px, none, #363636);
         @include text-normal;
       }
@@ -397,8 +405,8 @@ $ProximaNova: "Proxima Nova";
     .item-price {
       position: relative;
       z-index: 2;
-      bottom: -27px;
-      left: -34px;
+      bottom: -33px;
+      left: -33px;
       display: block;
       width: 228px;
       height: 54px;
@@ -411,14 +419,14 @@ $ProximaNova: "Proxima Nova";
   }
 }
 .repair {
-  height: 2663px;
+  height: 2580px;
   position: relative;
   background-image: url("assets/img/lines-bg.png");
   background-repeat: no-repeat;
 }
 .repair__online-control {
   position: relative;
-  top: -285px;
+  top: -328px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -446,7 +454,7 @@ $ProximaNova: "Proxima Nova";
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 92px;
+  margin-top: 87px;
 
   .form-label,
   .form-input {
@@ -510,7 +518,7 @@ $ProximaNova: "Proxima Nova";
 
 .repair__types {
   position: relative;
-  bottom: 180px;
+  bottom: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -520,14 +528,15 @@ $ProximaNova: "Proxima Nova";
     color: #181818;
   }
 }
-
+.promotion-from {
+    margin-left: 57px;
+}
 .repair__promotion {
   display: flex;
   position: relative;
-  bottom: 115px;
+  bottom: 195px;
   height: 725px;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: flex-end; 
 }
 .promotion-elipse {
   position: relative;
@@ -554,7 +563,6 @@ $ProximaNova: "Proxima Nova";
     border-radius: 30px;
     @include text-styling($YesevaOne, 18px, 42px, none);
     @include text-normal;
-
     text-align: center;
   }
 
@@ -684,7 +692,7 @@ $ProximaNova: "Proxima Nova";
   height: 72px;
   width: 350px;
   margin-top: 38px;
-  padding: 13px 0 13px 97px;
+  padding: 13px 0 13px 130px;
   box-sizing: border-box;
   word-wrap: break-word;
   @include text-styling($FuturaDemiC, 20px, 25px, none, #e3b873);
@@ -692,8 +700,8 @@ $ProximaNova: "Proxima Nova";
   &::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 33px;
+    top: 4px;
     height: 72px;
     width: 72px;
     border-radius: 50%;
@@ -732,7 +740,7 @@ $ProximaNova: "Proxima Nova";
 
 .pattern-list__items {
   display: flex;
-  height: 516px;
+  height: 526px;
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
@@ -773,7 +781,10 @@ $ProximaNova: "Proxima Nova";
   position: relative;
   z-index: 1;
   height: 620px;
-
+  .repair-examples {
+      margin-top: 0;
+  }
+}    
   .design-upper {
     display: flex;
     flex-direction: column;
@@ -793,13 +804,13 @@ $ProximaNova: "Proxima Nova";
     @include text-styling($FuturaBookC, 20px, 27px, none, #363636);
     text-align: center;
   }
-}
+
 /* --- END DESIGN-PROJECT ---*/
 /* ---SECTION GOAL--- */
 .goal {
   height: 1616px;
   position: relative;
-  bottom: 60px;
+  bottom: 72px;
   display: flex;
   justify-content: space-between;
   padding-top: 500px;
@@ -823,7 +834,7 @@ $ProximaNova: "Proxima Nova";
 
 .goal-info__title {
   max-width: 190px;
-  margin: 18px 0 92px 0;
+  margin: 14px 0 86px 0;
   @include text-styling($YesevaOne, 27px, 37px, uppercase, #e3b873);
   @include text-normal;
   word-break: break;
@@ -836,7 +847,7 @@ $ProximaNova: "Proxima Nova";
 
 .goal-info__subtitle {
   max-width: 212px;
-  margin: 22px 0 16px 0;
+  margin: 17px 0 9px 0;
   @include text-styling($YesevaOne, 15px, 23px, uppercase, #e3b873);
   @include text-normal;
   word-break: break;
@@ -846,10 +857,13 @@ $ProximaNova: "Proxima Nova";
   max-width: 342px;
   text-align: left;
   @include text-styling($FuturaBookC, 15px, 25px);
+  &:last-child {
+      margin-top: 16px;
+  }
 }
 .slider-switcher {
   display: flex;
-  margin-top: 107px;
+  margin-top: 104px;
   span {
     display: block;
   }
@@ -893,26 +907,27 @@ $ProximaNova: "Proxima Nova";
   max-width: 765px;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 127px 136px 100px;
+  grid-template-columns: 120px 127px 100px;
   row-gap: 36px;
-  column-gap: 200px;
-  margin-top: 87px;
+  column-gap: 211px;
+  margin-top: 90px;
 }
 .steps__number,
 .steps__target {
   display: block;
   opacity: 0.3;
+  font-family: $FuturaBookC;
   @include text-normal;
   font-size: 15px;
   line-height: 21px;
   color: #ffffff;
+}   
+.steps__target {    
+  line-height: 18px;  
+  margin-top: 8px; 
 }
-.steps__number {
-  font-family: $YesevaOne;
-  .steps__target {
-    font-family: $FuturaBookC;
-    line-height: 18px;
-  }
+.goal-steps__image {
+  margin-top: 46px;
 }
 /* --- END GOAL--- */
 /* ---SECTION TAEAM--- */
@@ -925,7 +940,7 @@ $ProximaNova: "Proxima Nova";
 }
 .team {
   position: relative;
-  top: -390px;
+  top: -403px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -938,7 +953,7 @@ $ProximaNova: "Proxima Nova";
 .team-text {
   display: block;
   width: 460px;
-  margin: 23px 0 73px 0;
+  margin: 23px 0 81px 0;
   @include text-styling($FuturaDemiC, 20px, 27px);
   text-align: center;
 }
@@ -1016,7 +1031,7 @@ $ProximaNova: "Proxima Nova";
 }
 .team-desc {
   max-width: 558px;
-  margin-top: 128px;
+  margin-top: 122px;
 }
 .team-desc__text {
   @include text-styling($FuturaBookC, 20px, 34px, none, #363636);
@@ -1026,7 +1041,7 @@ $ProximaNova: "Proxima Nova";
 
 /* --- REVIEW --- */
 .review {
-  margin-top: -300px;
+  margin-top: -307px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1042,7 +1057,7 @@ $ProximaNova: "Proxima Nova";
 }
 .review-text {
   display: block;
-  width: 460px;
+  width: 390px;
   margin: 23px 0 39px 0;
   @include text-styling($FuturaBookC, 20px, 27px, none, #363636);
   text-align: center;
@@ -1095,7 +1110,8 @@ $ProximaNova: "Proxima Nova";
 }
 .review-block__result {
   position: absolute;
-  bottom: -25px;
+  bottom: -17px;
+  left: 0;
   width: 294px;
   height: 54px;
   display: flex;
@@ -1152,8 +1168,9 @@ $ProximaNova: "Proxima Nova";
 .question-wrapper {
   position: absolute;
   width: 883px;
-  height: 452px;
-  top: -224px;
+  height: 446px;
+  top: -192px;
+  left: calc(50% - 431px);
   display: flex;
   padding: 34px 0;
   flex-direction: column;
@@ -1242,7 +1259,7 @@ $ProximaNova: "Proxima Nova";
 .contact-us {
   height: 107px;
   display: flex;
-  margin: 245px 0 41px 0;
+  margin: 269px 0 41px 0;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -1286,7 +1303,7 @@ $ProximaNova: "Proxima Nova";
 /* --- END CONTACTS ---*/
 /* --- FOOTER ---*/
 .footer {
-  height: 133px;
+  height: 166px;
   display: flex;
   align-items: center;
   background-color: #131313;
