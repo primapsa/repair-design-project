@@ -15,6 +15,7 @@
   width: 1440px;
 }
 
+/* --- HEADER ---*/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,32 +28,32 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 37px;
   width: 100%;
+  margin-top: 24px;
   padding: 0 100px 0 82px;
 }
 
-.home .home__logo {
+.home__logo {
   display: block;
   font-family: "FuturaDemiC";
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #E3B873;
+  color: #e3b873;
 }
 
-.home .home__menu {
+.home__menu {
   width: 581px;
 }
 
-.home .home__menu .menu {
+.home__menu .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,47 +65,50 @@
           align-items: center;
 }
 
-.home .home__menu .menu__items {
+.home__menu .menu__items {
   list-style: none;
 }
 
-.home .home__menu .menu__links {
+.home__menu .menu__links {
   font-family: "FuturaBookC";
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
-  text-decoration: none;
   text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.home .home__phone {
+.home__phone {
   display: block;
-  text-decoration: none;
   font-family: "FuturaDemiC";
   font-size: 14px;
   line-height: 16px;
+  text-transform: none;
+  color: #e3b873;
+  text-decoration: none;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #E3B873;
 }
 
-.home .home__call {
+.home__call {
   display: block;
   height: 37px;
   width: 161px;
-  background: #E3B873;
-  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border: 0;
   border-radius: 2px;
   font-family: "FuturaDemiC";
   font-size: 13px;
   line-height: 15px;
-  text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  background: #e3b873;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  text-align: center;
 }
 
+/* --- END HEADER --- */
+/* --- BANNER ---*/
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,12 +116,12 @@
   width: 100%;
 }
 
-.banner .banner__social {
+.banner__social {
   width: 82px;
   background-color: #131313;
 }
 
-.banner .banner__social .social-link {
+.banner__social .social-link {
   display: block;
   margin: 200px auto;
   width: 20px;
@@ -127,7 +131,7 @@
   background-repeat: no-repeat;
 }
 
-.banner .banner__banner {
+.banner__banner {
   position: relative;
   height: 513px;
   width: 100%;
@@ -138,62 +142,65 @@
   background-size: cover;
 }
 
-.banner .banner__banner .banner-title {
+.banner-title {
   display: block;
   max-width: 520px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 40px;
   line-height: 53px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.banner .banner__banner .banner-title--colored {
-  color: #E3B873;
+.banner-title_colored {
+  color: #e3b873;
 }
 
-.banner .banner__banner .banner-promo {
+.banner-promo {
   display: block;
   max-width: 490px;
   margin: 30px 0 45px 0;
   font-family: "FuturaBookC";
   font-size: 22px;
   line-height: 30px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
-.banner .banner__banner .btn {
+.btn {
   width: 207px;
   height: 51px;
   font-family: "FuturaDemiC";
   font-size: 13px;
   line-height: 15px;
-  text-align: center;
-  color: #FFFFFF;
   text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
 }
 
-.banner .banner__banner .banner-calculate {
+.banner-calculate {
   margin-right: 20px;
   border: 0;
-  background: #E3B873;
+  background: #e3b873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
   border-radius: 2px;
 }
 
-.banner .banner__banner .banner-submit {
+.banner-submit {
   background: 0;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 2px;
 }
 
-.banner .banner__banner .banner-scroll {
+.banner-scroll {
   position: relative;
+  width: 247px;
+  height: 97px;
   display: block;
   bottom: -141px;
   left: -134px;
@@ -206,26 +213,26 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 247px;
-  height: 97px;
   background-color: #131313;
 }
 
-.banner .banner__banner .banner-scroll .scroll-txt {
+.banner-scroll .scroll-txt {
   min-height: 29px;
   min-width: 150px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 29px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
   background-image: url("assets/img/scrol-down-marker.png");
   background-position: 120px 0;
   background-repeat: no-repeat;
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 
+/* --- END BANNER --- */
+/* --- PROJECTS --- */
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,7 +248,7 @@
   overflow: hidden;
 }
 
-.projects .projects__completed-projects {
+.projects__completed-projects {
   max-height: 482px;
   width: 660px;
   display: -webkit-box;
@@ -253,7 +260,7 @@
           flex-direction: column;
 }
 
-.projects .projects__completed-projects .projects-header {
+.projects-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,30 +275,31 @@
   max-width: 420px;
 }
 
-.projects .projects__completed-projects .projects-header .header-span {
+.projects-header .header-span {
   display: block;
 }
 
-.projects .projects__completed-projects .projects-header .project-title {
+.project-title {
   width: 171px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 27px;
   line-height: 37px;
-  letter-spacing: -0.07em;
   text-transform: uppercase;
-  color: #E3B873;
+  color: #e3b873;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.07em;
 }
 
-.projects .projects__completed-projects .projects-header .project-text {
+.project-text {
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 29px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
-.projects .projects__completed-projects .projects-desc {
+.projects-desc {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr;
@@ -302,57 +310,57 @@
   margin-top: 50px;
 }
 
-.projects .projects__completed-projects .projects-desc .desc-span {
+.desc-span {
   display: block;
   overflow: hidden;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #E3B873;
+  color: #e3b873;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.projects .projects__completed-projects .projects-desc .desc-span-text {
+.desc-span-text {
   display: block;
   max-width: 120px;
   overflow: hidden;
   font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 20px;
-  color: #FFFFFF;
   text-transform: none;
+  color: #ffffff;
 }
 
-.projects .projects__completed-projects .projects-switcher {
+.projects-switcher {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 90px;
 }
 
-.projects .projects__completed-projects .projects-switcher .switcher {
+.projects-switcher .switcher {
   display: block;
 }
 
-.projects .projects__completed-projects .projects-switcher .switcher-left,
-.projects .projects__completed-projects .projects-switcher .switcher-right {
+.projects-switcher .switcher-left,
+.projects-switcher .switcher-right {
   width: 42px;
   height: 13px;
 }
 
-.projects .projects__completed-projects .projects-switcher .switcher-left {
+.projects-switcher .switcher-left {
   margin-right: 20px;
   background-image: url("assets/img/switcher-left.png");
 }
 
-.projects .projects__completed-projects .projects-switcher .switcher-right {
+.projects-switcher .switcher-right {
   margin-left: 20px;
   background-image: url("assets/img/switcher-rigth.png");
 }
 
-.projects .projects__completed-projects .projects-switcher .switcher-marker {
+.projects-switcher .switcher-marker {
   width: 9px;
   height: 9px;
   margin: 0 9px;
@@ -360,17 +368,17 @@
   border-radius: 30px;
 }
 
-.projects .projects__completed-projects .projects-switcher .switcher-marker--colored {
-  background: #FFFFFF;
+.projects-switcher .switcher-marker_colored {
+  background: #ffffff;
 }
 
-.projects .projects__slider {
+.projects__slider {
   max-height: 551px;
   width: 100%;
   margin-left: 70px;
 }
 
-.projects .projects__slider .slider-map {
+.slider-map {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,25 +389,25 @@
   margin-bottom: 45px;
 }
 
-.projects .projects__slider .slider-map .map-name {
+.map-name {
   display: block;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
+  font-style: normal;
+  font-weight: normal;
   text-decoration: none;
 }
 
-.projects .projects__slider .slider-map .map-name--colored {
-  color: #E3B873;
+.map-name_colored {
+  color: #e3b873;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
-.projects .projects__slider .slider-frames {
+.slider-frames {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,24 +417,24 @@
   padding-right: 21px;
 }
 
-.projects .projects__slider .slider-frames .frame-content {
+.slider-frames .frame-content {
   width: 679px;
   height: 482px;
 }
 
-.projects .projects__slider .slider-frames .frame-content:nth-child(2) {
+.slider-frames .frame-content:nth-child(2) {
   position: absolute;
   right: -59%;
 }
 
-.projects .projects__slider .slider-frames:after {
+.slider-frames:after {
   content: "";
   position: absolute;
   top: calc(50% - 23px);
   right: 5%;
   width: 55px;
   height: 55px;
-  background-color: #E3B873;
+  background-color: #e3b873;
   -webkit-box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
           box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
   border-radius: 50%;
@@ -435,6 +443,8 @@
   background-position: 50% 50%;
 }
 
+/* --- END PROJECTS ---*/
+/* --- REPAIR --- */
 .repair-examples {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,7 +469,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 25px 0 0 34px;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
@@ -468,11 +478,12 @@
   display: block;
   margin-bottom: 13px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
+  text-transform: none;
   color: #363636;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .repair-examples .repair-examples__item .item-list .list-points {
@@ -484,6 +495,7 @@
   font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 25px;
+  text-transform: none;
   color: #959595;
 }
 
@@ -496,16 +508,16 @@
   width: 228px;
   height: 54px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 54px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
   text-align: center;
-  background: #E3B873;
+  background: #e3b873;
   -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
           box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-  text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 .repair {
@@ -515,7 +527,7 @@
   background-repeat: no-repeat;
 }
 
-.repair .repair__online-control {
+.repair__online-control {
   position: relative;
   top: -285px;
   display: -webkit-box;
@@ -532,38 +544,39 @@
   margin: 0 auto;
 }
 
-.repair .repair__online-control .online-sign {
+.online-sign {
   display: block;
   width: 300px;
   height: 67px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  text-transform: uppercase;
   background-image: url("assets/img/online-control.png");
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.repair .repair__online-control .online-video {
+.online-video {
   margin: 31px 0 99px 0;
 }
 
-.repair .repair__online-control .online-paragraph {
+.online-paragraph {
   display: block;
   max-width: 681px;
   font-family: "FuturaBookC";
   font-size: 20px;
   line-height: 34px;
-  text-align: center;
+  text-transform: none;
   color: #363636;
 }
 
-.repair .repair__online-control .online-form {
+.online-form {
   max-width: 769px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,73 +589,78 @@
   margin-top: 92px;
 }
 
-.repair .repair__online-control .online-form .form-label,
-.repair .repair__online-control .online-form .form-input {
+.online-form .form-label,
+.online-form .form-input {
   display: block;
 }
 
-.repair .repair__online-control .online-form .label-name,
-.repair .repair__online-control .online-form .input-name,
-.repair .repair__online-control .online-form .input-phone {
+.online-form .label-name,
+.online-form .input-name,
+.online-form .input-phone {
   width: 231px;
 }
 
-.repair .repair__online-control .online-form .input-name,
-.repair .repair__online-control .online-form .input-phone {
+.online-form .input-name,
+.online-form .input-phone {
   height: 26px;
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
-.repair .repair__online-control .online-form .input-name::-webkit-input-placeholder,
-.repair .repair__online-control .online-form .input-phone::-webkit-input-placeholder {
+.online-form .input-name::-webkit-input-placeholder,
+.online-form .input-phone::-webkit-input-placeholder {
   vertical-align: top;
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 36px;
+  text-transform: none;
   color: #363636;
 }
 
-.repair .repair__online-control .online-form .input-name:-ms-input-placeholder,
-.repair .repair__online-control .online-form .input-phone:-ms-input-placeholder {
+.online-form .input-name:-ms-input-placeholder,
+.online-form .input-phone:-ms-input-placeholder {
   vertical-align: top;
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 36px;
+  text-transform: none;
   color: #363636;
 }
 
-.repair .repair__online-control .online-form .input-name::-ms-input-placeholder,
-.repair .repair__online-control .online-form .input-phone::-ms-input-placeholder {
+.online-form .input-name::-ms-input-placeholder,
+.online-form .input-phone::-ms-input-placeholder {
   vertical-align: top;
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 36px;
+  text-transform: none;
   color: #363636;
 }
 
-.repair .repair__online-control .online-form .input-name::placeholder,
-.repair .repair__online-control .online-form .input-phone::placeholder {
+.online-form .input-name::placeholder,
+.online-form .input-phone::placeholder {
   vertical-align: top;
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 36px;
+  text-transform: none;
   color: #363636;
 }
 
-.repair .repair__online-control .online-form .label-name {
+.online-form .label-name {
   font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 20px;
+  text-transform: none;
   color: rgba(54, 54, 54, 0.5);
 }
 
-.repair .repair__online-control .online-form .input-submit {
+.online-form .input-submit {
   display: block;
   width: 200px;
   height: 51px;
-  background: #E3B873;
+  background: #e3b873;
   -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
           box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
   border: 0;
@@ -650,12 +668,12 @@
   font-family: "FuturaDemiC";
   font-size: 15px;
   line-height: 26px;
-  text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  text-align: center;
 }
 
-.repair .repair__online-control .online-form .checkbox-text {
+.online-form .checkbox-text {
   display: block;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -664,15 +682,16 @@
   font-family: "FuturaBookC";
   font-size: 16px;
   line-height: 22px;
+  text-transform: none;
   color: #181818;
 }
 
-.repair .repair__online-control .online-form .checkbox-text .checkbox-marker {
+.online-form .checkbox-text .checkbox-marker {
   display: inline-block;
   margin-right: 9px;
 }
 
-.repair .repair__types {
+.repair__types {
   position: relative;
   bottom: 180px;
   display: -webkit-box;
@@ -687,24 +706,25 @@
           align-items: center;
 }
 
-.repair .repair__types .repair-sign {
+.repair__types .repair-sign {
   display: block;
   width: 300px;
   height: 67px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  text-transform: uppercase;
   background-image: url("assets/img/types-repair.png");
   color: #181818;
 }
 
-.repair .repair__promotion {
+.repair__promotion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,7 +739,7 @@
           justify-content: space-between;
 }
 
-.repair .repair__promotion .promotion-elipse {
+.promotion-elipse {
   position: relative;
   height: 636px;
   min-width: 776px;
@@ -728,7 +748,7 @@
   background-repeat: no-repeat;
 }
 
-.repair .repair__promotion .promotion-elipse .promotion-point {
+.promotion-point {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,25 +761,26 @@
   justify-items: center;
 }
 
-.repair .repair__promotion .promotion-elipse .promotion-point .promotion-num {
+.promotion-point .promotion-num {
   display: block;
   width: 42px;
   height: 42px;
   margin-right: 13px;
-  background: #E3B873;
+  background: #e3b873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
   border-radius: 30px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 42px;
+  text-transform: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
   text-align: center;
-  color: #FFFFFF;
 }
 
-.repair .repair__promotion .promotion-elipse .promotion-point .promotion-num-text {
+.promotion-point .promotion-num-text {
   display: block;
   width: 225px;
   font-family: "FuturaMediumC";
@@ -768,31 +789,31 @@
   color: #363636;
 }
 
-.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(1) {
+.promotion-point:nth-of-type(1) {
   top: 66px;
   left: 355px;
 }
 
-.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(1) .promotion-num-text {
+.promotion-point:nth-of-type(1) .promotion-num-text {
   width: 422px;
 }
 
-.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(2) {
+.promotion-point:nth-of-type(2) {
   top: 133px;
   left: 432px;
 }
 
-.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(3) {
+.promotion-point:nth-of-type(3) {
   top: 252px;
   left: 455px;
 }
 
-.repair .repair__promotion .promotion-elipse .promotion-point:nth-of-type(4) {
+.promotion-point:nth-of-type(4) {
   top: 370px;
   left: 386px;
 }
 
-.repair .repair__promotion .promotion-from .submit-form {
+.promotion-from .submit-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,7 +831,7 @@
           box-sizing: border-box;
 }
 
-.repair .repair__promotion .promotion-from .submit-span {
+.promotion-from .submit-span {
   display: block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -820,61 +841,83 @@
   font-family: "FuturaDemiC";
   font-size: 20px;
   line-height: 25px;
+  text-transform: none;
+  color: #ffffff;
   text-align: center;
   word-wrap: break-word;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.repair .repair__promotion .promotion-from .form-label,
-.repair .repair__promotion .promotion-from .form-input {
+.promotion-from .form-label,
+.promotion-from .form-input {
   display: block;
 }
 
-.repair .repair__promotion .promotion-from .form-label,
-.repair .repair__promotion .promotion-from .form-input {
+.promotion-from .form-label,
+.promotion-from .form-input {
   width: 408px;
 }
 
-.repair .repair__promotion .promotion-from .form-input {
+.promotion-from .form-input {
   height: 26px;
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
 
-.repair .repair__promotion .promotion-from .form-input::-webkit-input-placeholder {
+.promotion-from .form-input::-webkit-input-placeholder {
   vertical-align: top;
+  font-family: "FuturaDemiC";
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: none;
+  color: #ffffff;
   font-family: "FuturaMediumC";
   font-size: 18px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.repair .repair__promotion .promotion-from .form-input:-ms-input-placeholder {
+.promotion-from .form-input:-ms-input-placeholder {
   vertical-align: top;
+  font-family: "FuturaDemiC";
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: none;
+  color: #ffffff;
   font-family: "FuturaMediumC";
   font-size: 18px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.repair .repair__promotion .promotion-from .form-input::-ms-input-placeholder {
+.promotion-from .form-input::-ms-input-placeholder {
   vertical-align: top;
+  font-family: "FuturaDemiC";
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: none;
+  color: #ffffff;
   font-family: "FuturaMediumC";
   font-size: 18px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.repair .repair__promotion .promotion-from .form-input::placeholder {
+.promotion-from .form-input::placeholder {
   vertical-align: top;
+  font-family: "FuturaDemiC";
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: none;
+  color: #ffffff;
   font-family: "FuturaMediumC";
   font-size: 18px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.repair .repair__promotion .promotion-from .checkbox-from {
+.promotion-from .checkbox-from {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -883,24 +926,25 @@
   margin-right: 9px;
 }
 
-.repair .repair__promotion .promotion-from .form-label {
+.promotion-from .form-label {
   font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 20px;
+  text-transform: none;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.repair .repair__promotion .promotion-from .form-label:nth-of-type(2) {
+.promotion-from .form-label:nth-of-type(2) {
   margin: 48px 0;
 }
 
-.repair .repair__promotion .promotion-from .input-submit {
+.promotion-from .input-submit {
   display: block;
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 213px;
   height: 51px;
-  background: #E3B873;
+  background: #e3b873;
   -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
           box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
   border: 0;
@@ -908,12 +952,12 @@
   font-family: "FuturaDemiC";
   font-size: 13px;
   line-height: 18px;
-  text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  text-align: center;
 }
 
-.repair .repair__promotion .promotion-from .checkbox-text {
+.promotion-from .checkbox-text {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -923,10 +967,11 @@
   font-family: "FuturaBookC";
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
-.repair .promotion-discount {
+.promotion-discount {
   position: relative;
   display: block;
   height: 72px;
@@ -939,10 +984,11 @@
   font-family: "FuturaDemiC";
   font-size: 20px;
   line-height: 25px;
-  color: #E3B873;
+  text-transform: none;
+  color: #e3b873;
 }
 
-.repair .promotion-discount::before {
+.promotion-discount::before {
   content: "";
   position: absolute;
   left: 0;
@@ -950,7 +996,7 @@
   height: 72px;
   width: 72px;
   border-radius: 50%;
-  background: #E3B873;
+  background: #e3b873;
   background-image: url("assets/img/pigbox.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -958,6 +1004,8 @@
           box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
 }
 
+/*--- END REPAIR ---*/
+/* --- PATTERN --- */
 .pattern {
   height: 864px;
   display: -webkit-box;
@@ -969,7 +1017,7 @@
   background-image: url("assets/img/pattern-bg.png");
 }
 
-.pattern .pattern-list {
+.pattern-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -982,21 +1030,21 @@
   padding: 134px 0 0 99px;
 }
 
-.pattern .pattern-list .pattern-list__text {
+.pattern-list__text {
   display: block;
   height: 66px;
   width: 283px;
   margin-bottom: 47px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 27px;
   line-height: 37px;
   text-transform: uppercase;
-  color: #E3B873;
+  color: #e3b873;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.pattern .pattern-list .pattern-list__items {
+.pattern-list__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1011,25 +1059,25 @@
   list-style: none;
 }
 
-.pattern .pattern-list .pattern-list__items .list-link {
+.list-link {
   text-decoration: none;
   font-family: "Proxima Nova";
   font-size: 20px;
   line-height: 34px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
-.pattern .pattern-gallery {
+.pattern-gallery {
   position: relative;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   padding-right: 102px;
 }
 
-.pattern .pattern-gallery .pattern-gallery__line {
+.pattern-gallery__line {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1041,21 +1089,23 @@
           flex-direction: column;
 }
 
-.pattern .pattern-gallery .pattern-gallery__line:nth-of-type(1) {
+.pattern-gallery__line:nth-of-type(1) {
   top: -43px;
   bottom: -41px;
   margin-right: 43px;
 }
 
-.pattern .pattern-gallery .pattern-gallery__line:nth-of-type(2) {
+.pattern-gallery__line:nth-of-type(2) {
   top: -112px;
   bottom: 40px;
 }
 
-.pattern .pattern-gallery .gallery-img:last-child {
+.gallery-img:last-child {
   margin-top: 37px;
 }
 
+/* ---END GALERY ---*/
+/* --- DESIGN-PROJECT ---*/
 .design-project {
   position: relative;
   z-index: 1;
@@ -1083,14 +1133,15 @@
   width: 300px;
   height: 67px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  text-transform: uppercase;
   background-image: url("assets/img/design-project.png");
   color: #181818;
 }
@@ -1101,10 +1152,12 @@
   font-family: "FuturaBookC";
   font-size: 20px;
   line-height: 27px;
-  text-align: center;
+  text-transform: none;
   color: #363636;
+  text-align: center;
 }
 
+/* --- END DESIGN-PROJECT ---*/
 /* ---SECTION GOAL--- */
 .goal {
   height: 1616px;
@@ -1142,43 +1195,43 @@
   font-size: 15px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .goal-info__title {
   max-width: 190px;
   margin: 18px 0 92px 0;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 27px;
   line-height: 37px;
-  word-break: break;
   text-transform: uppercase;
-  color: #E3B873;
+  color: #e3b873;
+  font-style: normal;
+  font-weight: normal;
+  word-break: break;
 }
 
 .goal-info__slider-counter {
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .goal-info__subtitle {
   max-width: 212px;
   margin: 22px 0 16px 0;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 23px;
-  word-break: break;
   text-transform: uppercase;
-  color: #E3B873;
+  color: #e3b873;
+  font-style: normal;
+  font-weight: normal;
+  word-break: break;
 }
 
 .goal-info__text {
@@ -1187,7 +1240,8 @@
   font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 25px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
 .slider-switcher {
@@ -1226,7 +1280,7 @@
 }
 
 .slider-switcher__point_active {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .goal-steps {
@@ -1262,7 +1316,7 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .steps__number {
@@ -1281,6 +1335,7 @@
   position: relative;
   background-image: url("assets/img/review-bg.png");
   background-repeat: no-repeat;
+  background-position: 0 100%;
 }
 
 .team {
@@ -1303,27 +1358,29 @@
   width: 300px;
   height: 67px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  text-transform: uppercase;
   background-image: url("assets/img/our-team.png");
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .team-text {
   display: block;
   width: 460px;
   margin: 23px 0 73px 0;
-  font-family: "FuturaBookC";
+  font-family: "FuturaDemiC";
   font-size: 20px;
   line-height: 27px;
+  text-transform: none;
+  color: #ffffff;
   text-align: center;
-  color: #FFFFFF;
 }
 
 .staff {
@@ -1390,7 +1447,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
 }
@@ -1407,25 +1464,26 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #E3B873;
+  background: #e3b873;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
 }
 
 .employee__name {
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  text-align: center;
+  text-transform: none;
   color: #181818;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
 }
 
 .employee__position {
@@ -1433,8 +1491,9 @@
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
+  text-transform: none;
   color: #959595;
+  text-align: center;
 }
 
 .team-desc {
@@ -1446,8 +1505,9 @@
   font-family: "FuturaBookC";
   font-size: 20px;
   line-height: 34px;
-  text-align: center;
+  text-transform: none;
   color: #363636;
+  text-align: center;
 }
 
 /* --- END TEAM --- */
@@ -1471,14 +1531,15 @@
   width: 300px;
   height: 67px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  text-transform: uppercase;
   background-image: url("assets/img/our-clients.png");
   color: #181818;
 }
@@ -1499,8 +1560,9 @@
   font-family: "FuturaBookC";
   font-size: 20px;
   line-height: 27px;
-  text-align: center;
+  text-transform: none;
   color: #363636;
+  text-align: center;
 }
 
 .review-block {
@@ -1517,7 +1579,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
@@ -1554,12 +1616,13 @@
   display: block;
   max-width: 180px;
   font-family: "Yeseva One";
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: none;
+  color: #181818;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
   word-wrap: wrap;
-  line-height: 23px;
-  color: #181818;
 }
 
 .review-block__text {
@@ -1568,6 +1631,7 @@
   font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 180%;
+  text-transform: none;
   color: #959595;
   overflow: hidden;
 }
@@ -1584,7 +1648,7 @@
       align-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #E3B873;
+  background: #e3b873;
   -webkit-box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
           box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
 }
@@ -1607,14 +1671,14 @@
   background-image: url("assets/img/result-square.png");
   background-repeat: no-repeat;
   background-position: 17px 11px;
-  border-right: 1px solid #FFFFFF;
+  border-right: 1px solid #ffffff;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 17px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .repare-result__duration {
@@ -1636,12 +1700,12 @@
   background-repeat: no-repeat;
   background-position: 17px 11px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 17px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* --- END REVIEW --- */
@@ -1694,13 +1758,13 @@
 .question-text {
   display: block;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
 }
 
 .question-form {
@@ -1730,6 +1794,7 @@
   font-family: "FuturaBookC";
   font-size: 15px;
   line-height: 20px;
+  text-transform: none;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1771,7 +1836,8 @@
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 24px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
 .input-label__name:-ms-input-placeholder,
@@ -1780,7 +1846,8 @@
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 24px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
 .input-label__name::-ms-input-placeholder,
@@ -1789,7 +1856,8 @@
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 24px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
 .input-label__name::placeholder,
@@ -1798,7 +1866,8 @@
   font-family: "FuturaBookC";
   font-size: 18px;
   line-height: 24px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
 .question-form__agreement {
@@ -1816,22 +1885,23 @@
   font-family: "FuturaBookC";
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  text-transform: none;
+  color: #ffffff;
 }
 
 .question-form__submit {
   width: 200px;
   height: 51px;
-  background: #E3B873;
+  background: #e3b873;
   border: 0;
   -webkit-box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
           box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
   font-family: "FuturaDemiC";
   font-size: 15px;
   line-height: 26px;
-  text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
+  text-align: center;
 }
 
 .contact-us {
@@ -1856,14 +1926,14 @@
   display: block;
   max-width: 589px;
   font-family: "Yeseva One";
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  text-transform: uppercase;
+  color: #e3b873;
+  font-style: normal;
+  font-weight: normal;
   word-wrap: wrap;
   text-align: center;
-  text-transform: uppercase;
-  color: #E3B873;
 }
 
 .contact-us__social {
@@ -1877,7 +1947,7 @@
   height: 28px;
   margin: 0 8px;
   border-radius: 50%;
-  background: #E3B873;
+  background: #e3b873;
 }
 
 .contact-us__email {
