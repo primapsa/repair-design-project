@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,15 +82,15 @@
                 <a href="#" class="map-name">Rostov-on-Don Patriotic</a>
               </nav>
               <div class="slider-frames">
-                <img class="frame-content" src="assets/img/slide-1.png">
-                <img class="frame-content" src="assets/img/slide-2.png">                       
+                <img class="frame-content" src="assets/img/slide-1.png" alt="example">
+                <img class="frame-content" src="assets/img/slide-2.png" alt="example">                       
               </div>
             </div>            
           </section>
           <section class="repair">
             <div class="repair__online-control">
               <span class="online-sign">online control</span>
-              <iframe class="online-video" width="817" height="434" src="https://www.youtube.com/embed/Btkt0F7O-O8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="online-video" width="817" height="434" src="https://www.youtube.com/embed/Btkt0F7O-O8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <p class="online-paragraph">At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
               <form action="#" class="online-form">
                 <label class="label-name form-label">Name<input class="input-name form-input" type="text" placeholder="What is your name:" required></label>                
@@ -295,7 +295,7 @@
               </div>
               <div class="goal-steps">
                 <div class="goal-steps__grid steps">
-                  <span class="steps__number">01<span class="steps__target"></span>Departure to room measurements</span>
+                  <span class="steps__number steps__number_active">01<span class="steps__target steps__target"></span>Departure to room measurements</span>
                   <span class="steps__number">02<span class="steps__target"></span>Compilation estimates</span>
                   <span class="steps__number">03<span class="steps__target"></span>Development project design</span>
                   <span class="steps__number">04<span class="steps__target"></span>Purchasing Supplies</span>
@@ -406,9 +406,10 @@
              </form>  
             </div>
             <div class="contact-us">              
-              <span class="contact-us__text">
-                Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
-              </span>
+              <div class="contact-us__text">
+                Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel 
+                <a class="contact-us__tel" href="tel:">+7 (928) 768 32 29</a>        
+              </div>
               <div class="contact-us__social">
                 <div class="contact-us__email social-icon"></div>
                 <div class="contact-us__instagram social-icon"></div>
@@ -419,15 +420,15 @@
         </main> 
           <footer class="footer">
             <div class="home">
-              <h1 class="home__logo">IC "Repair Design Project</h1>
+              <a class="home__index" href="#"><h1 class="home__logo">IC "Repair Design Project</h1></a>
               <nav class="home__menu">
                 <ul class="menu">
-                  <li class="menu__items menu__items--selected"><a href="" class="menu__links">home</a></li>
-                  <li class="menu__items"><a href="#" class="menu__links">projects</a></li>
-                  <li class="menu__items"><a href="" class="menu__links">measurement</a></li>
-                  <li class="menu__items"><a href="" class="menu__links">team</a></li>
-                  <li class="menu__items"><a href="" class="menu__links">reviews</a></li>
-                  <li class="menu__items"><a href="" class="menu__links">contacts</a></li>
+                  <li class="menu__items"><a href="#home" class="menu__links menu__links_active">home</a></li>
+                  <li class="menu__items"><a href="#projects" class="menu__links">projects</a></li>
+                  <li class="menu__items"><a href="#measurement" class="menu__links">measurement</a></li>
+                  <li class="menu__items"><a href="#team" class="menu__links">team</a></li>
+                  <li class="menu__items"><a href="#reviews" class="menu__links">reviews</a></li>
+                  <li class="menu__items"><a href="#contacts" class="menu__links">contacts</a></li>
                 </ul>
               </nav>
               <a class="home__phone" href="tel:" >+7 (928) 768-32-39</a>    

@@ -111,11 +111,13 @@ $ProximaNova: "Proxima Nova";
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   text-align: center;
-  //cursor: pointer;
+  cursor: pointer;
 
   &:hover {
    background: #e4bc7c;
-   outline: 1px solid #ffffff;
+   
+   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5); 
+   transition: all 0.3s;
   }
 }
 
@@ -136,7 +138,7 @@ $ProximaNova: "Proxima Nova";
     height: 174px;
     text-decoration: none;
     background-image: url("assets/img/instagrm-line.png");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
   }
 }
 .banner__banner {
@@ -179,12 +181,23 @@ $ProximaNova: "Proxima Nova";
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
   border-radius: 2px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5); 
+    transition: all 0.2s; 
+  }
+  
 }
 .banner-submit {
   background: 0;
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 2px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5);  
+    transition: all 0.3s;
+  }
 }
 
 .banner-scroll {
@@ -198,6 +211,8 @@ $ProximaNova: "Proxima Nova";
   align-items: center;
   justify-content: center;
   background-color: #131313;
+  cursor: pointer;
+  
 
   .scroll-txt {
     min-height: 29px;
@@ -208,14 +223,20 @@ $ProximaNova: "Proxima Nova";
     background-position: 120px 0;
     background-repeat: no-repeat;
   }
+  &:hover {
+    -webkit-transition: all 1s ease;
+    -webkit-filter: hue-rotate(65deg);
+    .scroll-txt {
+    text-decoration: underline;    
+    }
+  }
 }
 
 /* --- END BANNER --- */
 
 /* --- PROJECTS --- */
 .projects {
-  display: flex;
-  //align-items: flex-end;
+  display: flex; 
   height: 1078px;
   padding: 108px 0 0 100px;
   box-sizing: border-box;
@@ -284,18 +305,26 @@ $ProximaNova: "Proxima Nova";
   margin-top: 68px;
 
   .switcher {
-    display: block;
+    display: block;    
   }
 
   .switcher-left,
   .switcher-right {
     width: 42px;
     height: 13px;
+    cursor: pointer; 
+    &:hover {     
+      -webkit-filter: opacity(80%);
+      transform: scale(1.1, 1.1);
+      transition: all 0.5s ease;
+    }
+    
   }
 
   .switcher-left {
     margin-right: 20px;
     background-image: url("assets/img/switcher-left.png");
+  
   }
 
   .switcher-right {
@@ -309,7 +338,12 @@ $ProximaNova: "Proxima Nova";
     margin: 0 9px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 30px;
-
+    cursor: pointer;
+    &:hover {     
+     
+      transform: scale(1.5, 1.5);
+      transition: all 0.5s ease;
+    }
     &_colored {
       background: #ffffff;
     }
@@ -338,10 +372,11 @@ $ProximaNova: "Proxima Nova";
   );
   @include text-normal;
   text-decoration: none;
-  &_colored {
+  &_colored, &:hover {
     color: #e3b873;
     text-decoration-line: underline;
   }
+  
 }
 
 .slider-frames {
@@ -350,6 +385,7 @@ $ProximaNova: "Proxima Nova";
   height: 482px;
   width: 100%;
   padding-right: 21px;
+  overflow: hidden;
 
   .frame-content {
     width: 679px;
@@ -368,13 +404,17 @@ $ProximaNova: "Proxima Nova";
     right: 8%;
     width: 55px;
     height: 55px;
+    cursor: pointer;
     background-color: #e3b873;
     box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
     border-radius: 50%;
     background-image: url("assets/img/next-slide.png");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 50%; 
+    
   }
+  
+  
 }
 
 /* --- END PROJECTS ---*/
@@ -420,7 +460,7 @@ $ProximaNova: "Proxima Nova";
       position: relative;
       z-index: 2;
       bottom: -33px;
-      left: -33px;
+      left: -34px;
       display: block;
       width: 228px;
       height: 54px;
@@ -454,13 +494,15 @@ $ProximaNova: "Proxima Nova";
 }
 
 .online-video {
-  margin: 31px 0 99px 0;
+  margin: 31px 0 99px 0; 
+  border: 0;
 }
 
 .online-paragraph {
   display: block;
   max-width: 681px;
   @include text-styling($FuturaBookC, 20px, 34px, none, #363636);
+  text-align: center;
 }
 
 .online-form {
@@ -512,8 +554,13 @@ $ProximaNova: "Proxima Nova";
     box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
     border: 0;
     border-radius: 2px;
+    cursor: pointer;
     @include text-styling($FuturaDemiC, 15px, 26px, uppercase);
     text-align: center;
+    &:hover {
+      box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.4);
+      transition: all 0.5s ease;
+    }
   }
 
   .checkbox-text {
@@ -685,11 +732,16 @@ $ProximaNova: "Proxima Nova";
     width: 213px;
     height: 51px;
     background: #e3b873;
+    cursor: pointer;
     box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
     border: 0;
     border-radius: 2px;
     @include text-styling($FuturaDemiC, 13px, 18px, uppercase);
     text-align: center;
+    &:hover {
+      box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.4);
+      transition: all 0.5s ease;
+    }
   }
   .checkbox-text {
     display: inline-flex;
@@ -762,6 +814,11 @@ $ProximaNova: "Proxima Nova";
 .list-link {
   text-decoration: none;
   @include text-styling($ProximaNova, 20px, 34px, none);
+  &:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #E3B873;
+  }
 }
 
 .pattern-gallery {
@@ -847,11 +904,20 @@ $ProximaNova: "Proxima Nova";
 }
 
 .goal-info__title {
+  position: relative;
   max-width: 190px;
   margin: 14px 0 86px 0;
   @include text-styling($YesevaOne, 27px, 37px, uppercase, #e3b873);
   @include text-normal;
   word-break: break;
+  &:after {
+    content: "";
+    width: 92px;
+    position: absolute;
+    right: -114px;
+    bottom: 16px;    
+    border-bottom: 1px solid #E3B873; 
+  }
 }
 
 .goal-info__slider-counter {
@@ -887,6 +953,12 @@ $ProximaNova: "Proxima Nova";
 .slider-switcher__switcher-next {
   width: 42px;
   height: 13px;
+  cursor: pointer;
+  &:hover {     
+    -webkit-filter: opacity(80%);
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s ease;
+  }
 }
 
 .slider-switcher__switcher-prev {
@@ -905,9 +977,14 @@ $ProximaNova: "Proxima Nova";
   margin: 0 9px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 100%;
+  cursor: pointer;
 
   &_active {
     background: #ffffff;
+  }
+  &:hover {        
+    transform: scale(1.5, 1.5);
+    transition: all 0.2s ease;
   }
 }
 
@@ -935,7 +1012,25 @@ $ProximaNova: "Proxima Nova";
   font-size: 15px;
   line-height: 21px;
   color: #ffffff;
-}   
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}  
+.steps__number {
+  position: relative;
+  &:after {
+    content: "";
+    width: 15px;
+    position: absolute;
+    left: 1px;  
+    top: 20px;    
+    border-bottom: 1px solid #E3B873;     
+  }
+  &_active {
+    opacity: 1;
+  }
+} 
 .steps__target {    
   line-height: 18px;  
   margin-top: 8px; 
@@ -1266,8 +1361,12 @@ $ProximaNova: "Proxima Nova";
   border: 0;
   box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.1);
   @include text-styling($FuturaDemiC, 15px, 26px, uppercase);
-
+  cursor: pointer;
   text-align: center;
+  &:hover {
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.3);
+    transition: all 0.5s ease;
+  }
 }
 
 .contact-us {
@@ -1286,6 +1385,10 @@ $ProximaNova: "Proxima Nova";
   word-wrap: wrap;
   text-align: center;
 }
+.contact-us__tel {
+  text-decoration: none;
+  color: #e3b873;
+}
 .contact-us__social {
   display: flex;
 }
@@ -1296,6 +1399,7 @@ $ProximaNova: "Proxima Nova";
   margin: 0 8px;
   border-radius: 50%;
   background: #e3b873;
+  cursor: pointer;
 }
 
 .contact-us__email {
