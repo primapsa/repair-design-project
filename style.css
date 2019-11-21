@@ -44,11 +44,16 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #e3b873;
+  cursor: pointer;
+}
+
+.home__index {
+  text-decoration: none;
 }
 
 .home__menu {
   width: 581px;
-  margin: 0 74px 0 102px;
+  margin: 0 74px 0 98px;
 }
 
 .home__menu .menu {
@@ -74,6 +79,10 @@
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+}
+
+.home__menu .menu__links_active, .home__menu .menu__links:hover {
+  color: #E3B873;
 }
 
 .home__phone {
@@ -104,6 +113,11 @@
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   text-align: center;
+}
+
+.home__call:hover {
+  background: #e4bc7c;
+  outline: 1px solid #ffffff;
 }
 
 /* --- END HEADER --- */

@@ -65,23 +65,31 @@ $ProximaNova: "Proxima Nova";
 .home__logo {
   display: block;
   @include text-styling($FuturaDemiC, 14px, 16px, uppercase, #e3b873);
+  cursor: pointer;
 }
-
+.home__index {
+  text-decoration: none;
+}
 .home__menu {
   width: 581px;
-  margin: 0 74px 0 102px;
+  margin: 0 74px 0 98px;
 
   .menu {
     @include flex-center-space;
   }
-
+  
   .menu__items {
     list-style: none;
+  
   }
 
   .menu__links {
     @include text-styling($FuturaBookC, 14px, 16px, uppercase, #ffffff);
     text-decoration: none;
+    &_active, &:hover {
+      color: #E3B873;
+    }
+    
   }
 }
 
@@ -103,6 +111,12 @@ $ProximaNova: "Proxima Nova";
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   text-align: center;
+  //cursor: pointer;
+
+  &:hover {
+   background: #e4bc7c;
+   outline: 1px solid #ffffff;
+  }
 }
 
 /* --- END HEADER --- */

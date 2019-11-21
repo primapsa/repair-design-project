@@ -13,15 +13,15 @@
   <div class="wrapper">
       <header class="header"> 
         <div class="home">
-          <h1 class="home__logo">IC "Repair Design Project</h1>
+          <a href="#" class="home__index"><h1 class="home__logo">IC "Repair Design Project"</h1></a>
           <nav class="home__menu">
             <ul class="menu">
-              <li class="menu__items menu__items_selected"><a href="" class="menu__links">home</a></li>
-              <li class="menu__items"><a href="#" class="menu__links">projects</a></li>
-              <li class="menu__items"><a href="" class="menu__links">measurement</a></li>
-              <li class="menu__items"><a href="" class="menu__links">team</a></li>
-              <li class="menu__items"><a href="" class="menu__links">reviews</a></li>
-              <li class="menu__items"><a href="" class="menu__links">contacts</a></li>
+              <li class="menu__items menu__items_selected"><a href="#home" class="menu__links menu__links_active ">home</a></li>
+              <li class="menu__items"><a href="#projects" class="menu__links">projects</a></li>
+              <li class="menu__items"><a href="#measurement" class="menu__links">measurement</a></li>
+              <li class="menu__items"><a href="#team" class="menu__links">team</a></li>
+              <li class="menu__items"><a href="#reviews" class="menu__links">reviews</a></li>
+              <li class="menu__items"><a href="#contacts" class="menu__links">contacts</a></li>
             </ul>
           </nav>
           <a class="home__phone" href="tel:" >+7 (928) 768-32-39</a>    
@@ -29,7 +29,7 @@
         </div>  
       </header>
         <main class="content">
-          <section class="banner">
+          <section class="banner" id="home">
             <div class="banner__social">
               <a class="social-link" href="http://instagram.com/"></a>
             </div>
@@ -47,7 +47,7 @@
               </div>
             </div>            
           </section>
-          <section class="projects">
+          <section class="projects" id="projects">
             <div class="projects__completed-projects">
               <div class="projects-header">
                   <span class="project-title header-span">Completed projects</span>
@@ -272,7 +272,7 @@
             </div>
           </section>
           <section class="goal">            
-              <div class="goal-info">
+              <div class="goal-info" id="measurement">
                 <span class="goal-info__header">How we are working</span>
                 <span class="goal-info__title">6 steps to the goal</span>
                 <span class="goal-info__slider-counter">1/6</span>
@@ -307,7 +307,7 @@
            
           </section>
           <section class="team-review">
-            <div class="team">
+            <div class="team" id="team">
               <span class="team-sign">our team</span>
               <span class="team-text">Our team has helped to become happier for more than 500 families and we are not going to stop</span>
               <div class="staff">
@@ -344,7 +344,7 @@
                 </div> 
              </div>   
 
-            <div class="review">
+            <div class="review" id="reviews">
               <span class="review-sign">our clients</span>
               <span class="review-text">80% of our customers recommend us to their friends and family.</span>
               <div class="review-container">
@@ -384,7 +384,7 @@
               </div>
             </div>           
           </section>
-          <section class="contacts">
+          <section class="contacts" id="contacts">
             <div class="question-wrapper">  
               <span class="question-text">have any questions?</span> 
               <form action="#" class="question-form">         
