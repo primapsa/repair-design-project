@@ -4,15 +4,9 @@
   }
 }
 
-@media (max-width: 375px) {
-  .wrapper {
-    width: 375px;
-  }
-}
-
 .wrapper {
   margin: 0 auto;
-  width: 1440px;
+  overflow: hidden;
 }
 
 /* --- HEADER ---*/
@@ -2154,4 +2148,32 @@
 }
 
 /* --- END FOOTER ---*/
+@media (max-width: 375px) {
+  .wrapper {
+    width: 375px;
+  }
+  .home__menu,
+  .home__call,
+  .banner__social {
+    display: none;
+  }
+  .home {
+    padding: 0;
+  }
+  .banner {
+    height: 476px;
+  }
+  .banner__banner {
+    padding: 85px 18px 61px 18px;
+  }
+  .banner-title {
+    font-size: 23px;
+  }
+  .banner-promo {
+    font-size: 18px;
+  }
+  .btn {
+    width: 90%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
