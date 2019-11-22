@@ -6,6 +6,7 @@
 
 .wrapper {
   margin: 0 auto;
+  width: 1440px;
   overflow: hidden;
 }
 
@@ -748,21 +749,23 @@
 }
 
 .online-form .checkbox-text {
-  display: block;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin: 35px auto;
+  height: 18px;
   width: 286px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 35px auto;
   font-family: "FuturaBookC";
   font-size: 16px;
   line-height: 22px;
   text-transform: none;
   color: #181818;
-}
-
-.online-form .checkbox-text .checkbox-marker {
-  display: inline-block;
-  margin-right: 9px;
 }
 
 .repair__types {
@@ -1041,6 +1044,7 @@
 }
 
 .promotion-from .checkbox-text {
+  position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1052,6 +1056,36 @@
   line-height: 22px;
   text-transform: none;
   color: #ffffff;
+}
+
+.check-enabled {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #E3B873;
+  border-radius: 1px;
+}
+
+.checkbox-from,
+.input-label__agreement,
+.checkbox-marker {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.checkbox-from:checked + .check-enabled,
+.input-label__agreement:checked + .check-enabled,
+.checkbox-marker:checked + .check-enabled {
+  background-image: url("assets/img/agree.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.checkbox-from:not(:checked) + .check-enabled,
+.input-label__agreement:not(:checked) + .check-enabled,
+.checkbox-marker:not(:checked) + .check-enabled {
+  background-image: none;
 }
 
 .promotion-discount {

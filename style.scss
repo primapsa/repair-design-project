@@ -39,6 +39,7 @@ $ProximaNova: "Proxima Nova";
 }
 .wrapper {
   margin: 0 auto;  
+  width: 1440px;
   overflow: hidden;
 }
 /* --- HEADER ---*/
@@ -558,16 +559,13 @@ $ProximaNova: "Proxima Nova";
   }
 
   .checkbox-text {
-    display: block;
-    justify-self: center;
-    margin: 35px auto;
+    height: 18px;
     width: 286px;
-    @include text-styling($FuturaBookC, 16px, 22px, none, #181818);
-
-    .checkbox-marker {
-      display: inline-block;
-      margin-right: 9px;
-    }
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;   
+    margin: 35px auto;
+    @include text-styling($FuturaBookC, 16px, 22px, none, #181818);    
   }
 }
 
@@ -700,11 +698,12 @@ $ProximaNova: "Proxima Nova";
       color: #ffffff;
     }
   }
-  .checkbox-from {
+   
+  .checkbox-from {       
     display: inline-flex;
     height: 18px;
     width: 18px;
-    margin-right: 9px;
+    margin-right: 9px;   
   }
 
   .form-label {
@@ -738,11 +737,34 @@ $ProximaNova: "Proxima Nova";
     }
   }
   .checkbox-text {
+    position: relative;
     display: inline-flex;
     height: 18px;
     width: 286px;
     margin: 18px 0 39px 0;
     @include text-styling($FuturaBookC, 16px, 22px, none);
+  }
+}
+
+.check-enabled {
+  position: absolute;
+  width: 18px;   
+  height: 18px;
+  background: #E3B873;
+  border-radius: 1px;
+}
+
+.checkbox-from,
+.input-label__agreement,
+.checkbox-marker {
+  appearance: none; 
+  &:checked + .check-enabled {
+    background-image: url("assets/img/agree.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;            
+  }   
+  &:not(:checked) + .check-enabled {
+    background-image: none;
   }
 }
 
