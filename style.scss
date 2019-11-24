@@ -1448,7 +1448,34 @@ $wrapper: 1440px;
 
 /* --- END FOOTER ---*/
 
+/* --- FORM ---*/
+.call-me {
+  width: 506px;
+  height: 509px;
+ box-sizing: border-box;
+ padding: 33px 49px 27px 49px;
+}
+.form-title {
+  display: block;
+  width: 362px;  
+font-family: $YesevaOne;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+}
+.form-send-input, 
+.send-input {
+  display: flex;
+  width: 100%;
+}
+.form-send {
+  height: 408px;
+}
 
+/* --- END FORM ---*/
 @media (max-width: 375px) {
   .wrapper {
     width: 375px;
