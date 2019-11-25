@@ -1,6 +1,17 @@
+@media (max-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    width: 375px;
+  }
+}
+
 .wrapper {
   margin: 0 auto;
-  width: 1440px;
   overflow: hidden;
 }
 
@@ -71,7 +82,7 @@
 }
 
 .home__menu .menu__links_active, .home__menu .menu__links:hover {
-  color: #E3B873;
+  color: #e3b873;
 }
 
 .home__phone {
@@ -1057,13 +1068,14 @@
   position: absolute;
   width: 18px;
   height: 18px;
-  background: #E3B873;
+  background: #e3b873;
   border-radius: 1px;
 }
 
 .checkbox-from,
 .input-label__agreement,
-.checkbox-marker {
+.checkbox-marker,
+.form-send-input__input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1071,7 +1083,8 @@
 
 .checkbox-from:checked + .check-enabled,
 .input-label__agreement:checked + .check-enabled,
-.checkbox-marker:checked + .check-enabled {
+.checkbox-marker:checked + .check-enabled,
+.form-send-input__input:checked + .check-enabled {
   background-image: url("assets/img/agree.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1079,7 +1092,8 @@
 
 .checkbox-from:not(:checked) + .check-enabled,
 .input-label__agreement:not(:checked) + .check-enabled,
-.checkbox-marker:not(:checked) + .check-enabled {
+.checkbox-marker:not(:checked) + .check-enabled,
+.form-send-input__input:not(:checked) + .check-enabled {
   background-image: none;
 }
 
@@ -1183,7 +1197,7 @@
 .list-link:hover {
   text-decoration: underline;
   text-underline-position: under;
-  color: #E3B873;
+  color: #e3b873;
 }
 
 .pattern-gallery {
@@ -1340,7 +1354,7 @@
   position: absolute;
   right: -114px;
   bottom: 16px;
-  border-bottom: 1px solid #E3B873;
+  border-bottom: 1px solid #e3b873;
 }
 
 .goal-info__slider-counter {
@@ -1490,7 +1504,7 @@
   position: absolute;
   left: 1px;
   top: 20px;
-  border-bottom: 1px solid #E3B873;
+  border-bottom: 1px solid #e3b873;
 }
 
 .steps__number_active {
@@ -2179,10 +2193,173 @@
 }
 
 /* --- END FOOTER ---*/
+/* --- FORM ---*/
+.call-me {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: calc(50% - 253px);
+  width: 506px;
+  height: 509px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 33px 49px 27px 49px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #181818;
+}
+
+.form-close {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1.5px solid #ffffff;
+  background-image: url("assets/img/close-svg.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 33% 33%;
+}
+
+.form-title {
+  display: block;
+  width: 362px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.form-send-input,
+.send-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.form-send {
+  height: 368px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-send-input:not(:last-of-type) {
+  height: 50px;
+  font-family: "FuturaBookC";
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-send-input:last-of-type {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -32px;
+  font-family: "FuturaBookC";
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.send-input {
+  height: 27px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.send-input::-webkit-input-placeholder {
+  font-family: "FuturaDemiC";
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.send-input:-ms-input-placeholder {
+  font-family: "FuturaDemiC";
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.send-input::-ms-input-placeholder {
+  font-family: "FuturaDemiC";
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.send-input::placeholder {
+  font-family: "FuturaDemiC";
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.send-input-checkbox {
+  height: 18px;
+  width: 18px;
+  margin-right: 9px;
+}
+
+.form-send-submit {
+  width: 231px;
+  height: 51px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background: #e3b873;
+  border: 0;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  font-family: "FuturaDemiC";
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* --- END FORM ---*/
 @media (max-width: 375px) {
-  .wrapper {
-    width: 375px;
-  }
   .home__menu,
   .home__call,
   .banner__social,
@@ -2217,7 +2394,7 @@
   .home__phone {
     margin: 0;
     font-size: 12px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
   }
   .banner {
@@ -2351,7 +2528,7 @@
   .online-paragraph {
     font-size: 14px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .online-form {
     position: relative;
@@ -2388,28 +2565,28 @@
   .online-form .form-input::-webkit-input-placeholder {
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .online-form .form-input:-ms-input-placeholder {
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .online-form .form-input::-ms-input-placeholder {
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .online-form .form-input::placeholder {
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .online-form .checkbox-text {
     margin: 0;
     font-size: 16px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .repair {
     height: 100%;
@@ -2428,13 +2605,11 @@
   .repair-examples .repair-examples__item {
     margin: 0;
   }
-  .repair-examples
-.repair-examples__item {
+  .repair-examples .repair-examples__item {
     height: 495px;
     margin-bottom: 57px;
   }
-  .repair-examples
-.repair-examples__item .item-price {
+  .repair-examples .repair-examples__item .item-price {
     width: 190px;
     height: 40px;
     bottom: -21px;
@@ -2442,17 +2617,14 @@
     font-size: 15px;
     line-height: 40px;
   }
-  .repair-examples
-.repair-examples__item .item-list {
+  .repair-examples .repair-examples__item .item-list {
     padding: 12px 0 0 31px;
   }
-  .repair-examples
-.repair-examples__item .item-list .list-title {
+  .repair-examples .repair-examples__item .item-list .list-title {
     font-size: 15px;
     line-height: 21px;
   }
-  .repair-examples
-.repair-examples__item .item-list .list-points {
+  .repair-examples .repair-examples__item .item-list .list-points {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2466,14 +2638,11 @@
             flex-direction: column;
     margin: 7px 0 0 15px;
   }
-  .repair-examples
-.repair-examples__item .item-list .list-points .points {
+  .repair-examples .repair-examples__item .item-list .list-points .points {
     font-size: 13px;
     line-height: 22px;
   }
-  .repair-examples
-.repair-examples__item
-.item-list {
+  .repair-examples .repair-examples__item .item-list {
     left: 0;
     width: 270px;
   }
@@ -2520,7 +2689,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #E3B873;
+    background: #e3b873;
     -webkit-box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
             box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
     background-image: url("assets/img/gallery-left.png");
@@ -2536,7 +2705,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #E3B873;
+    background: #e3b873;
     -webkit-box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
             box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
     background-image: url("assets/img/gallery-right.png");
@@ -2615,7 +2784,7 @@
     margin: 19px 0 39px 0;
     font-size: 15px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .team-review {
     height: 1690px;
@@ -2642,7 +2811,7 @@
     width: 340px;
     font-size: 15px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .employee {
     width: 304px;
@@ -2730,6 +2899,21 @@
   .social-icon {
     width: 39px;
     height: 39px;
+  }
+  .call-me {
+    left: 0;
+    top: 0;
+    width: 340px;
+    height: 509px;
+    padding: 40px 23px 27px 23px;
+  }
+  .form-title {
+    width: 309px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .form-send-submit {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
