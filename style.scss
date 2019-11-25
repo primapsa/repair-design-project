@@ -37,19 +37,10 @@ $ProximaNova: "Proxima Nova";
   align-items: center;
 }
 
-@media (max-width: 1440px) {
-  .wrapper {
-    width: 1440px;
-  }
-}
-@media (max-width: 375px) {
-  .wrapper {
-    width: 375px;
-  }
-}
 .wrapper {
   margin: 0 auto;
   overflow: hidden;
+  width: 1440px;
 }
 /* --- HEADER ---*/
 .header {
@@ -1557,6 +1548,10 @@ $ProximaNova: "Proxima Nova";
 }
 /* --- END FORM ---*/
 @media (max-width: 375px) {
+  .wrapper {
+    width: 375px;
+  }
+
   .home__menu,
   .home__call,
   .banner__social,
